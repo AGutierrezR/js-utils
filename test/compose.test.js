@@ -37,6 +37,7 @@ describe('compose', () => {
     }
 
     expect(context.a(5)).toBe(40)
+    expect(compose(x, y, z).call(context, 5)).toBe(40)
   })
 })
 
@@ -44,7 +45,7 @@ describe('compose properties', () => {
   it('Compose two function', () => {
     const f = (x) => x + 1
     const g = (x) => x * 2
-  
+
     expect(compose(f, g)(1)).toBe(f(g(1)))
   })
 
@@ -52,7 +53,7 @@ describe('compose properties', () => {
     const f = (x) => x + 1
     const g = (x) => x * 2
     const h = (x) => x / 2
-  
+
     expect(compose(f, compose(g, h))(1)).toBe(compose(compose(f, g), h)(1))
   })
 })
