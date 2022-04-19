@@ -1,5 +1,5 @@
-import { _arity } from './internals/_arity'
-import { _curryN } from './internals/_curryN'
+import { _arity } from './_internals/_arity'
+import { _curryN } from './_internals/_curryN'
 
 /**
  * Returns a curried equivalent of the provided function.
