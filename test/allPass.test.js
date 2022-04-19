@@ -45,4 +45,25 @@ describe('allPass', () => {
     expect(pred2).toHaveBeenCalled()
     expect(pred3).not.toHaveBeenCalled()
   })
+
+  it('Should preserve the context', () => {
+    const context = { x: 10 }
+
+    function pred1(x) {
+      return x === this.x
+    }
+    function pred2(x) {
+      return x === this.x
+    }
+    function pred3(x) {
+      return x === this.x
+    }
+
+    const checkEveryPredicate = allPass([pred1, pred2, pred3])
+    expect(checkEveryPredicate.call(context, 10)).toBe(true)
+  })
+
+  it('Should return true if predicates param is a empty array', () => {
+    expect(allPass([])(3)).toBeTrue()
+  })
 })
