@@ -1,4 +1,5 @@
 export { add } from './add'
+export { adjust } from './adjust'
 export { all } from './all'
 export { allPass } from './allPass'
 export { compose } from './compose'
