@@ -1,0 +1,9 @@
+export function _isFunction(x) {
+  const type = Object.prototype.toString.call(x)
+  return (
+    type === '[object Function]' ||
+    type === '[object AsyncFunction]' ||
+    type === '[object GeneratorFunction]' ||
+    type === '[object AsyncGeneratorFunction]'
+  )
+}
