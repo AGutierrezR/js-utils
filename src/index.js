@@ -16,3 +16,4 @@ export { curryN } from './curryN'
 export { pipe } from './pipe'
 
 export { unless } from './unless'
+export { when } from './when'
