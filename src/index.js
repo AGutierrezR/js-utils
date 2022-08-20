@@ -14,3 +14,5 @@ export { compose } from './compose'
 export { curry } from './curry'
 export { curryN } from './curryN'
 export { pipe } from './pipe'
+
+export { unless } from './unless'
