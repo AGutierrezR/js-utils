@@ -16,6 +16,6 @@ export { compose } from './compose'
 export { curry } from './curry'
 export { curryN } from './curryN'
 export { pipe } from './pipe'
-
+export { prop } from './prop'
 export { unless } from './unless'
 export { when } from './when'
