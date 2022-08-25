@@ -4,4 +4,4 @@
  * @param {*} n
  * @return {Boolean}
  */
-export default Number.isInteger
+export const _isInteger = Number.isInteger
