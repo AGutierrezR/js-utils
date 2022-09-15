@@ -32,3 +32,4 @@ export { view } from './view'
 export { when } from './when'
 
 export { objectify } from './objectify'
+export { listify } from './listify'
