@@ -30,3 +30,5 @@ export { unless } from './unless'
 export { update } from './update'
 export { view } from './view'
 export { when } from './when'
+
+export { objectify } from './objectify'
